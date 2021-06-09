@@ -1,0 +1,54 @@
+{
+  "name": "library-dash",
+  "private": true,
+  "description": "Library dashboard",
+  "version": "0.1.0",
+  "author": "0sumrich",
+  "dependencies": {
+    "@loadable/component": "^5.15.0",
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.58",
+    "@material-ui/styles": "^4.11.3",
+    "classnames": "^2.3.1",
+    "gatsby": "^3.6.2",
+    "gatsby-image": "^3.1.0",
+    "gatsby-plugin-layout": "^2.6.0",
+    "gatsby-plugin-manifest": "^3.1.0",
+    "gatsby-plugin-material-ui": "^3.0.1",
+    "gatsby-plugin-offline": "^4.1.0",
+    "gatsby-plugin-react-helmet": "^4.1.0",
+    "gatsby-plugin-sharp": "^3.1.1",
+    "gatsby-source-filesystem": "^3.1.0",
+    "gatsby-transformer-csv": "^3.1.0",
+    "gatsby-transformer-json": "^3.1.0",
+    "gatsby-transformer-sharp": "^3.1.0",
+    "plotly.js": "^1.58.4",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "react-iframe": "^1.8.0",
+    "react-plotly.js": "^2.5.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0",
+    "prettier": "2.2.1"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "0BSD",
+  "scripts": {
+    "build": "gatsby build",
+    "dev": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/0sumrich/library-development-plan"
+  }
+}
