@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: "/library-dash",
+  pathPrefix: "/library-development-plan",
   flags: { PRESERVE_WEBPACK_CACHE: true },
   siteMetadata: {
     title: `Barnet Libraries Library Development Plans data`,
