@@ -2,9 +2,9 @@ module.exports = {
   pathPrefix: "/library-dash",
   flags: { PRESERVE_WEBPACK_CACHE: true },
   siteMetadata: {
-    title: `Barnet Libraries Stats`,
+    title: `Barnet Libraries Library Development Plans data`,
     author: `github.com/0sumrich`,
-    description: "KPIs",
+    description: "LDP Plan data",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,12 +18,6 @@ module.exports = {
         },
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-layout`,
-    //   options: {
-    //     component: require.resolve(`./src/components/layout.js`),
-    //   },
-    // },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-json`,
