@@ -3,7 +3,6 @@ import { makeStyles } from "@material-ui/core/styles"
 import AppBar from "@material-ui/core/AppBar"
 import Tabs from "@material-ui/core/Tabs"
 import Tab from "@material-ui/core/Tab"
-import { navigate } from "@reach/router"
 import { Link } from "gatsby"
 
 const useStyles = makeStyles(theme => ({
@@ -27,9 +26,10 @@ function LinkTab({ href, ...props }) {
 }
 
 export default function Layout({ children, location }) {
-  const { pathname } = location
+  const pathPrefix = "/library-development-plan"
+  const pathname = location.pathname.replace(pathPrefix, '')
   const classes = useStyles()
-  const labels = { Demographics: "/", "IMD Map": "/imdmap/" }
+  const labels = { Demographics: `/`, "IMD Map": `/imdmap/` }
   const fixValue = s => (s.slice(-1) === "/" ? s : s + "/")
   const [value, setValue] = useState(fixValue(pathname))
   return (
